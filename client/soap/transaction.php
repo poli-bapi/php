@@ -9,10 +9,10 @@ $GetDetailedTransaction -> request = new GetDetailedTransactionRequest();
 $GetDetailedTransaction -> request -> MerchantCode = MERCHANT_CODE;
 $GetDetailedTransaction -> request -> AuthenticationCode = AUTHENTICATION_CODE;
 $GetDetailedTransaction -> request -> IncludeSteps = true;
-if (isset($_GET['merchant_ref']))
-	$GetDetailedTransaction -> request -> MerchantReference = $_GET['mref'];
-if (isset($_GET['transaction_ref']))
-	$GetDetailedTransaction -> request -> TransactionRefNo = $_GET['tref'];
+if (isset($_GET['mref']))
+	$GetDetailedTransaction->request-> MerchantReference = $_GET['mref'];
+if (isset($_GET['tref']))
+	$GetDetailedTransaction->request-> TransactionRefNo = $_GET['tref'];
 
 $response = $client -> GetDetailedTransaction($GetDetailedTransaction);
 $result = $response -> GetDetailedTransactionResult;

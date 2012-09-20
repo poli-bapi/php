@@ -114,7 +114,7 @@ echo "<option value='$c'>$c</option>";
 foreach((array)$transactions as $transaction):
 
 ?>
-<tr><td><a href="transaction.php?tref=<?php echo $transaction->TransactionRefNo  ?>"><?php echo $transaction->TransactionRefNo?></a></td><td><a href="transaction.php?merchant_ref=mref=<?php echo $transaction->MerchantReference?>"></td>
+<tr><td><a href="transaction.php?tref=<?php echo $transaction->TransactionRefNo  ?>"><?php echo $transaction->TransactionRefNo?></a></td><td><a href="transaction.php?mref=mref=<?php echo $transaction->MerchantReference?>"></td>
 
 <td><?php echo $transaction->AmountPaid?></td><td><?php echo $transaction->BankReceiptNo?></td><td><?php echo $transaction->CurrencyCode?></td><td><?php echo $transaction->CurrencyName?></td><td><?php echo $transaction->EndDateTime?></td><td><?php echo $transaction->EstablishedDateTime?></td><td><?php echo $transaction->FinancialInstitutionCode?></td><td><?php echo $transaction->FinancialInstitutionName?></td><td><?php echo $transaction->MerchantCode?></td><td><?php echo $transaction->MerchantCommonName?></td><td><?php echo $transaction->MerchantDefinedData?></td><td><?php echo $transaction->PayerAcctNumber?></td><td><?php echo $transaction->PayerAcctSortCode?></td><td><?php echo $transaction->PayerAcctSuffix?></td><td><?php echo $transaction->PaymentAmount?></td><td><?php echo $transaction->TransactionStatus?></td><td><?php echo $transaction->TransactionStatusCode?></td></tr>
 

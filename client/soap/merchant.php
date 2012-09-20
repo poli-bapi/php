@@ -111,7 +111,7 @@ foreach($transactions as $transaction):
 
 ?>
             <tr><td><a href="transaction.php?tref=<?php echo $transaction->TransactionRefNo  ?>"><?php echo $transaction->TransactionRefNo?><
-            /a></td><td><a href="transaction.php?mref=mref=<?php echo $transaction->MerchantReference?>"></td>
+            /a></td><td><a href="transaction.php?mref=<?php echo $transaction->MerchantReference?>"></td>
 
             <td><?php echo $transaction->AmountPaid?><
             /td><td><?php echo $transaction->BankReceiptNo?><
